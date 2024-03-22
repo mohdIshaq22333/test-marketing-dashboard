@@ -1,3 +1,5 @@
+import Header from "@/components/header";
+import SideBar from "@/components/sidebar";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -11,7 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex gap-8 p-8">
+          <div className="min-w-[220px]">
+            <SideBar />
+          </div>
+          <section className="flex-1">
+            <Header />
+            {children}
+          </section>
+        </div>
+      </body>
     </html>
   );
 }
