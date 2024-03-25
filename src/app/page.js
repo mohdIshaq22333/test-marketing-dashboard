@@ -1,4 +1,5 @@
 import DashboardOverview from "@/components/dashboardOverview";
+import DraggableWrap from "@/components/draggableWrap";
 import MarketGoalCard from "@/components/marketGoalCard";
 import SalesHistory from "@/components/salesHistory";
 import TransactionList from "@/components/transactionList";
@@ -6,7 +7,7 @@ import TransactionList from "@/components/transactionList";
 export default function Home() {
   return (
     <main className="mt-8">
-      <div className="flex gap-8">
+      {/* <div className="flex gap-8">
         <div className="w-[70%]">
           <DashboardOverview />
         </div>
@@ -21,7 +22,8 @@ export default function Home() {
         <div className="flex-1">
           <SalesHistory />
         </div>
-      </div>
+      </div> */}
+      <DraggableWrap />
     </main>
   );
 }
