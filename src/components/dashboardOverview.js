@@ -17,7 +17,7 @@ const cardsInfo = [
 ];
 function DashboardOverview() {
   return (
-    <div className="bg-black rounded-xl px-8 py-12 relative">
+    <div className="bg-black rounded-xl px-8 py-12 relative h-full">
       <span className="text-white text-sm mb-3 block ml-6">
         Dashboard Overview
       </span>
