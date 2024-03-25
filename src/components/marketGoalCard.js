@@ -3,7 +3,7 @@ import CircleProgressBar from "./circleProgressBar";
 
 function MarketGoalCard() {
   return (
-    <div className="bg-black rounded-xl p-6 relative justify-center h-full overflow-hidden">
+    <div className="bg-black rounded-xl p-6 relative justify-center h-full overflow-hidden flex flex-col items-center">
       <Image
         src={"/icons/threeDots.svg"}
         width={30}
